@@ -37,4 +37,8 @@ class Driver {
     fun getTheCurrentURL(): String? {
         return Hooks.webDriver.page?.url()
     }
+
+    fun getURLFromANewTab(buttonToBeClicked: String?): String? {
+        return Hooks.webDriver.page?.waitForPopup { clickButton(buttonToBeClicked) }?.url()
+    }
 }
