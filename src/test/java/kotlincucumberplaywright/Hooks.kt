@@ -10,6 +10,7 @@ import kotlincucumberplaywright.Hooks.webDriver.page
 
 class Hooks {
     object webDriver {
+
         var page: Page? = null
     }
 
