@@ -26,7 +26,7 @@ class Driver {
         return index?.let { Hooks.webDriver.page?.locator(element)?.nth(it)?.textContent()}
     }
 
-    fun getAllTextFromAListOfElements(element: String?): List<String?>? {
+    fun getAllTextFromAListOfElements(element: String?): List<String>? {
         return Hooks.webDriver.page?.locator(element)?.allTextContents()
     }
 
